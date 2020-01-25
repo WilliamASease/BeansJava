@@ -19,7 +19,7 @@ import javax.sound.sampled.SourceDataLine;
 import javax.swing.*;
 
 @SuppressWarnings("serial")
-public class Puyo extends JPanel {
+public class Beans extends JPanel {
 	// Unchanging Fields
 	HashMap<String, Image> sprites = readInAll();
 	ArrayList<Image> guysprites = readInGuys();
@@ -51,7 +51,7 @@ public class Puyo extends JPanel {
 	int[] next;
 	int[] nextpos = getNextPos();
 
-	public Puyo() {
+	public Beans() {
 		Launcher l = new Launcher();
 		while (!start) {
 			wait(.02);
@@ -75,7 +75,7 @@ public class Puyo extends JPanel {
 	}
 
 	public static void main(String[] args) {
-		Puyo b = new Puyo();
+		Beans b = new Beans();
 	}
 
 	public void paint(Graphics g) {
@@ -497,7 +497,6 @@ public class Puyo extends JPanel {
 	}
 
 	class Launcher extends JPanel {
-		@SuppressWarnings("unchecked")
 		JFrame frame;
 
 		public Launcher() {
