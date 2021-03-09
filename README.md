@@ -1,4 +1,4 @@
 # BeansJava
 A simple Java game.
-This one should compile and run as-is.
+Just download and run the .jar!
 Soundtrack provided by BenSounds royalty-free music.
